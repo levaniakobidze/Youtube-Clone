@@ -1,0 +1,62 @@
+hr {
+  margin: 10px 0;
+  height: 1px;
+  border: 1px solid #f3f3f3;
+}
+
+.leftBar {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+  background-color: #fff;
+  height: 89vh;
+  overflow-y: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10.3%;
+}
+
+.leftBar:hover > .scroll::-webkit-scrollbar-thumb {
+  background-color: #9c9c9c;
+}
+
+.leftBar .scroll {
+  overflow-y: scroll;
+  height: 89vh;
+}
+
+.leftBar .scroll::-webkit-scrollbar {
+  width: 9px;
+  height: 4px;
+}
+
+.leftBar .scroll::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.leftBar .leftBar-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0;
+}
+
+.leftBar .leftBar-content .leftBar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+/*# sourceMappingURL=LeftBar.css.map */

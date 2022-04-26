@@ -1,0 +1,44 @@
+hr {
+  margin: 10px 0;
+  height: 1px;
+  border: 1px solid rgb(243, 243, 243);
+}
+
+.leftBar {
+  flex: 0.2;
+  background-color: #fff;
+  height: 89vh;
+  overflow-y: hidden;
+  position: sticky;
+  top: 10.3%;
+
+  &:hover > .scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(156, 156, 156);
+  }
+
+  .scroll {
+    overflow-y: scroll;
+    height: 89vh;
+    &::-webkit-scrollbar {
+      width: 9px;
+      height: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+  }
+
+  .leftBar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0;
+
+    .leftBar-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.menuItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  margin: 5px 0;
+  padding: 5px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  background-color: #dfdfdf;
+}
+
+.menuItem:hover > h4 {
+  font-weight: bold;
+  font-size: 15.3px;
+}
+
+.menuItem:hover > .icon {
+  color: red;
+}
+
+.menuItem .icon {
+  margin: 0 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menuItem h4 {
+  font-size: 15px;
+  color: #303030;
+  margin: 0 10px;
+  font-weight: 100;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/*# sourceMappingURL=MenuItem.css.map */

@@ -1,12 +1,12 @@
 .header {
   width: 100%;
-  height: 55px;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 60px;
+  padding: 0 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  background-color: #fff;
+  z-index: 1000;
   position: sticky;
   top: 0%;
   .input-and-micro {
@@ -15,7 +15,7 @@
     .input {
       display: flex;
       align-items: center;
-      width: 40vw;
+      width: 45vw;
       input {
         flex: 1;
         height: 40px;
@@ -33,7 +33,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(233, 232, 232);
+        background-color: rgb(245, 245, 245);
         border: 1px solid rgb(179, 179, 179);
         cursor: pointer;
       }
@@ -52,10 +52,13 @@
     .burger-menu {
       .burger-icon {
         font-size: 33px !important;
+        padding: 2px;
+        color: rgb(143, 143, 143);
+        cursor: pointer;
       }
     }
     .logo-img {
-      width: 103px;
+      width: 90px;
       margin-left: 20px;
     }
   }
@@ -67,18 +70,19 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      width: 200px;
+      width: 140px;
       height: 40px;
+      margin-right: 15px;
       .right-icon {
-        margin-right: 10px;
         height: 40px;
         width: 55px;
+        color: rgb(117, 117, 117);
         padding: 7px;
         cursor: pointer;
       }
     }
     .profile {
-      width: 40px;
+      width: 33px;
       border-radius: 50%;
       cursor: pointer;
       img {
