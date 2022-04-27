@@ -14,7 +14,7 @@
 }
 
 .menuItem:hover {
-  background-color: #dfdfdf;
+  background-color: #f1f1f1;
 }
 
 .menuItem:hover > h4 {

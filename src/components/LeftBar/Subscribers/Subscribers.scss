@@ -1,0 +1,20 @@
+.subscribers {
+  width: 100%;
+}
+.subscribers-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 13.5px;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(241, 241, 241);
+  }
+  .subscribers-profile-img {
+    width: 32px;
+  }
+  p {
+    margin-left: 25px;
+    font-size: 15.3px;
+  }
+}

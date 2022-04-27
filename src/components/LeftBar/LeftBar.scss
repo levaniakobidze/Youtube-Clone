@@ -3,13 +3,25 @@ hr {
   height: 1px;
   border: 1px solid rgb(243, 243, 243);
 }
+.non-active {
+  flex: 0.06 !important;
+  padding: 0 10px;
+  transition: all 0.3s;
+}
+.non-active-menu {
+  display: none !important;
+}
+.non-active-menu-cont-active {
+  display: block !important;
+}
 
 .leftBar {
-  flex: 0.2;
+  flex: 0.23;
   background-color: #fff;
   height: 89vh;
   overflow-y: hidden;
   position: sticky;
+  transition: all 0.3s;
   top: 10.3%;
 
   &:hover > .scroll::-webkit-scrollbar-thumb {
@@ -20,7 +32,7 @@ hr {
     overflow-y: scroll;
     height: 89vh;
     &::-webkit-scrollbar {
-      width: 9px;
+      width: 7px;
       height: 4px;
     }
     &::-webkit-scrollbar-thumb {
@@ -39,6 +51,21 @@ hr {
       display: flex;
       flex-direction: column;
       width: 100%;
+    }
+  }
+  .non-active-menu-cont {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    .none-active-menu-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      p {
+        font-size: 11px;
+      }
     }
   }
 }

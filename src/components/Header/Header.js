@@ -7,12 +7,15 @@ import VideoCallOutlinedIcon from "@mui/icons-material/VideoCallOutlined";
 import AppsOutlinedIcon from "@mui/icons-material/AppsOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
-function Header() {
+function Header({ activeMenu, setActiveMenu }) {
   return (
     <div className='header'>
       <div className='left-side-box'>
         <div className='burger-menu'>
-          <MenuSharpIcon className='burger-icon' />
+          <MenuSharpIcon
+            className='burger-icon'
+            onClick={() => setActiveMenu(!activeMenu)}
+          />
         </div>
         <a href='#'>
           {" "}

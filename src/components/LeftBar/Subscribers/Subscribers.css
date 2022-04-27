@@ -1,0 +1,30 @@
+.subscribers {
+  width: 100%;
+}
+
+.subscribers-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 13.5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.subscribers-item:hover {
+  background-color: #f1f1f1;
+}
+
+.subscribers-item .subscribers-profile-img {
+  width: 32px;
+}
+
+.subscribers-item p {
+  margin-left: 25px;
+  font-size: 15.3px;
+}
+/*# sourceMappingURL=Subscribers.css.map */

@@ -1,6 +1,101 @@
 .videoContent {
-  -webkit-box-flex: 0.8;
-      -ms-flex: 0.8;
-          flex: 0.8;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #f7f7f7;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.videoContent .video-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+  width: 245px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.videoContent .video-item:hover {
+  background-color: #ebebeb;
+  -webkit-box-shadow: 0 0px 10px 5px #dadada;
+          box-shadow: 0 0px 10px 5px #dadada;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+  width: 290px;
+}
+
+.videoContent .video-item .video-img {
+  width: 100%;
+}
+
+.videoContent .video-item .video-img img {
+  width: 100%;
+}
+
+.videoContent .video-item .profile-and-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  padding: 5px 0;
+}
+
+.videoContent .video-item .profile-and-name p {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  font-size: 13px;
+  padding: 5px 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.videoContent .video-item .profile-and-name img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.videoContent .video-item .channel-name {
+  margin-left: 55px;
+}
+
+.videoContent .video-item .channel-name P {
+  color: #868686;
+  font-size: 13px;
+}
+
+.videoContent .video-item .views-and-time {
+  margin-left: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 0;
+}
+
+.videoContent .video-item .views-and-time p {
+  color: #868686;
+  font-size: 13px;
 }
 /*# sourceMappingURL=VideoContent.css.map */
