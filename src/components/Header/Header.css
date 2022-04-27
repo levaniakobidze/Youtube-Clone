@@ -11,7 +11,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
+  background-color: white;
   z-index: 1000;
   position: -webkit-sticky;
   position: sticky;
@@ -137,5 +137,68 @@
 .header .right-side-box .profile img {
   width: 100%;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 861px) {
+  .search-icon {
+    padding: 0 !important;
+    margin-left: 150px !important;
+    font-size: 10px !important;
+    height: 30px !important;
+    border: 0 !important;
+    background-color: #ffff !important;
+    width: 45px !important;
+  }
+  .header {
+    padding: 0 !important;
+  }
+  input {
+    display: none;
+  }
+  .input {
+    border: 0 !important;
+  }
+}
+
+@media screen and (max-width: 861px) {
+  .header {
+    -webkit-box-shadow: 0 0 10px 1px grey;
+            box-shadow: 0 0 10px 1px grey;
+    z-index: 10000;
+  }
+  .right-side-icons {
+    display: none !important;
+  }
+  .micro-icon {
+    display: none !important;
+  }
+  .logo-img {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 503px) {
+  .header {
+    height: 47px;
+    padding: 10px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .search-icon {
+    padding: 0 !important;
+    margin-left: 90px;
+    font-size: 10px !important;
+    height: 30px !important;
+    border: 0 !important;
+    background-color: #ffff !important;
+    width: 45px !important;
+  }
+  .burger-menu {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

@@ -12,7 +12,7 @@ function App() {
       <Header activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
       <div className='main-content'>
         <LeftBar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
-        <VideoContent />
+        <VideoContent activeMenu={activeMenu} />
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 export const Data = [
   {
     icon: "https://res.cloudinary.com/diyky5uya/image/upload/v1648645717/profilePic1_cmmsdz.png",
-    name: "Levan iakobidze",
+    name: "Speak English",
   },
   {
     icon: "https://res.cloudinary.com/diyky5uya/image/upload/v1648804907/Ellipse_1_fsaztg.png",
-    name: "Levan iakobidze",
+    name: "Jozeph Jordan",
   },
   {
     icon: "https://res.cloudinary.com/diyky5uya/image/upload/v1648807870/Ellipse_1_1_yjzil2.png",
@@ -13,10 +13,10 @@ export const Data = [
   },
   {
     icon: "https://res.cloudinary.com/diyky5uya/image/upload/v1648645717/profilePic1_cmmsdz.png",
-    name: "Levan iakobidze",
+    name: "Dolphin",
   },
   {
     icon: "https://res.cloudinary.com/diyky5uya/image/upload/v1648645717/profilePic1_cmmsdz.png",
-    name: "Levan iakobidze",
+    name: "Mr.fishman",
   },
 ];

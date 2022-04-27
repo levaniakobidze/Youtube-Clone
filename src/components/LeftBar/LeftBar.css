@@ -39,6 +39,23 @@ hr {
   background-color: #9c9c9c;
 }
 
+.leftBar .title {
+  width: 70%;
+  padding: 10px;
+  margin-left: 8px;
+  font-size: 15px;
+  color: dimgray;
+}
+
+.leftBar .text {
+  width: 200px;
+  word-wrap: break-word;
+  padding: 0px 15px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #585858;
+}
+
 .leftBar .scroll {
   overflow-y: scroll;
   height: 89vh;
@@ -91,6 +108,8 @@ hr {
 }
 
 .leftBar .non-active-menu-cont .none-active-menu-item {
+  text-decoration: none;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,7 +126,42 @@ hr {
   padding: 20px;
 }
 
+.leftBar .non-active-menu-cont .none-active-menu-item .non-active-icon {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.leftBar .non-active-menu-cont .none-active-menu-item:hover .non-active-icon {
+  color: red;
+}
+
 .leftBar .non-active-menu-cont .none-active-menu-item p {
   font-size: 11px;
+}
+
+@media screen and (max-width: 989px) {
+  .leftBar {
+    position: fixed;
+    left: 0;
+    top: 7%;
+    height: 100vh;
+    -webkit-box-shadow: 150px 50px 100000px 70px black;
+            box-shadow: 150px 50px 100000px 70px black;
+  }
+  .non-active {
+    display: none;
+    -webkit-box-flex: 0.06 !important;
+        -ms-flex: 0.06 !important;
+            flex: 0.06 !important;
+    padding: 0 10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+@media screen and (max-width: 503px) {
+  .leftBar {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=LeftBar.css.map */

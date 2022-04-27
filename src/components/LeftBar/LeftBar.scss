@@ -27,6 +27,21 @@ hr {
   &:hover > .scroll::-webkit-scrollbar-thumb {
     background-color: rgb(156, 156, 156);
   }
+  .title {
+    width: 70%;
+    padding: 10px;
+    margin-left: 8px;
+    font-size: 15px;
+    color: rgb(105, 105, 105);
+  }
+  .text {
+    width: 200px;
+    word-wrap: break-word;
+    padding: 0px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgb(88, 88, 88);
+  }
 
   .scroll {
     overflow-y: scroll;
@@ -58,14 +73,44 @@ hr {
     flex-direction: column;
     justify-content: center;
     .none-active-menu-item {
+      text-decoration: none;
+      color: #000;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 20px;
+      .non-active-icon {
+        transition: all 0.4s;
+      }
+      &:hover .non-active-icon {
+        color: red;
+      }
       p {
         font-size: 11px;
       }
     }
+  }
+}
+
+@media screen and(max-width:989px) {
+  .leftBar {
+    position: fixed;
+    left: 0;
+    top: 7%;
+    height: 100vh;
+    box-shadow: 150px 50px 100000px 70px black;
+  }
+  .non-active {
+    display: none;
+    flex: 0.06 !important;
+    padding: 0 10px;
+    transition: all 0.3s;
+  }
+}
+
+@media screen and(max-width:503px) {
+  .leftBar {
+    display: none !important;
   }
 }
